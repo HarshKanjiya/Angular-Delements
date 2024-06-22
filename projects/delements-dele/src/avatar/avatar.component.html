@@ -1,0 +1,7 @@
+@if (lazyLoad()) {
+@defer {
+<img loading="lazy" class="h-28 w-28 rounded-full overflow-hidden {{dClass()}}" [style]="style()" [src]="src()" [alt]="alt()" />
+}
+}@else {
+<img class="dele-avatar {{dClass()}}" [style]="style()" [src]="src()" [alt]="alt()" />
+}

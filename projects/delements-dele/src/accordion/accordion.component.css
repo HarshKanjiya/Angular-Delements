@@ -1,0 +1,10 @@
+.accordion-wrapper {
+    border: 1px solid var(--primary-b-color, #232323);
+
+    border-radius: var(--primary-b-r, 8px);
+    overflow: hidden;
+}
+
+:host ::ng-deep .accordion-wrapper :last-child .accordion-item {
+    border: none;
+}

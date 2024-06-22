@@ -1,0 +1,18 @@
+@if(show()){
+<div @slideInOut class="dele-alert-d-screen" (click)="closeDialog()">
+    <div class="dele-alert-d-wrapper" (click)="$event.stopPropagation()">
+        <div class="dele-alert-d-header">
+            <p>{{message}}</p>
+        </div>
+        @if(desc?.trim()?.length){
+        <div class="dele-alert-d-body">
+            {{desc}}
+        </div>
+        }
+        <div class="dele-alert-d-footer">
+            <dele-button type="secondary" (click)="closeDialog()">{{nagetiveBtnTxt}}</dele-button>
+            <dele-button type="primary" (click)="submit()">{{positiveBtnTxt}}</dele-button>
+        </div>
+    </div>
+</div>
+}

@@ -1,0 +1,7 @@
+<div>
+    <div class="accordion-content-wrapper" [@contentAnimation]="state.currentTab() == currIndex() ? 'open' : 'closed'">
+        <div class="accordion-content">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>
