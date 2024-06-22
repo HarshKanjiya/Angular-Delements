@@ -1,0 +1,9 @@
+.dele-pagination-wrapper {
+    width: 100%;
+    padding: var(--primary-p, 0.7rem 1rem);
+    border: 1px solid var(--primary-b-color, #232323);
+    border-radius: var(--primary-b-r, 8px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

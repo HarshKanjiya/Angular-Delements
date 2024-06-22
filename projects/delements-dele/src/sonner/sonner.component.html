@@ -1,0 +1,28 @@
+<div class="sooner-main" (mouseenter)="hoverIn()" (mouseleave)="hoverOut()">
+    @for( ele of list;track ele.id){
+    <div class="soonerOuterWrapper" @slideInOut [style]="
+      'bottom:' +
+      ele.bottom +
+      'px;z-index:-' +
+      $index +
+      ';transform:scale(' +
+      ele.scale +
+      ')' +
+      ';opacity:' +
+      opaFunc($index)
+    ">
+        <div class="sonner-wrapper">
+            <!-- <div class="sonner-loader" style="width:{{ ele.skewX }}%;height:{{ ele.skewY }}px; transition: {{
+          ele.skewY ? '{{duration}}s' : '0s'
+        }} linear width, 0s height"></div> -->
+            <div class="sonner-text">
+                <p class="sonner-title">{{ ele.title }}</p>
+                <p>{{ ele.desc }}</p>
+            </div>
+            <div class="sonner-undo">
+                <dele-button size="sm" (click)="undo(ele.id)">UNDO</dele-button>
+            </div>
+        </div>
+    </div>
+    }
+</div>

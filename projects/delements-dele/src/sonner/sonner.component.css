@@ -1,0 +1,70 @@
+.sonner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: var(--primary-b-r, 8px);
+    border: 1px solid var(--primary-b-color, #232323);
+    padding: var(--primary-p, 0.7rem 1rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.soonerOuterWrapper {
+    position: fixed;
+    right: 15px;
+    width: 300px;
+    background: none;
+    color: var(--primary-text-color, white);
+    transition: z-index 0.3s, bottom 0.3s, transform 0.3s, opacity 300ms,
+        position 300ms;
+    padding-bottom: 20px;
+}
+
+.sonner-undo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sonner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.sonner-title {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.sooner-main {
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 40px;
+    height: fit-content;
+    width: fit-content;
+    min-height: 300px;
+}
+
+button {
+    font-size: 0.7rem;
+}
+
+.sonner-loader {
+    width: 100%;
+    background-color: var(--primary-b-color,#232323);
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,65 @@
+button {
+    margin: 0;
+    /* padding: 0.6rem 1rem; */
+    outline: none;
+    border: 1px solid #343434;
+    border-radius: 6px;
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 200ms all;
+}
+
+button:disabled {
+    background-color: #a2a2a2;
+}
+
+button:focus {
+    border: 1px solid #454545;
+    
+}
+
+.dele-button-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: unset;
+}
+
+.dele-button-icon-wrapper svg {
+    height: 1rem;
+    width: 1rem;
+    background-color: unset;
+    transform-origin: center;
+    animation-duration: 1s;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dele-button-icon-primary {
+    stroke: var(--primary-bg-color, black);
+    background-color: var(--primary-text-color, white);
+}
+
+.dele-button-primary {
+    background-color: var(--primary-text-color, white);
+    color: var(--primary-bg-color, black);
+}
+
+.dele-button-secondary {}
+
+.dele-button-classic {}
+
+.dele-button-light {}

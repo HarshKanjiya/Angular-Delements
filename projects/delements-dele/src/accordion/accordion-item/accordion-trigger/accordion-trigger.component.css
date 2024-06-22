@@ -1,0 +1,9 @@
+.accordion-trigger-wrapper {
+    min-width: 100%;
+    padding: var(--primary-p, 0.7rem 1rem);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}

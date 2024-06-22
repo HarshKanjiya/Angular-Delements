@@ -1,0 +1,9 @@
+.accordion-content-wrapper {
+    /* background-color: #e4e4e4; */
+    overflow: hidden;
+    height: fit-content;
+}
+
+.accordion-content {
+    padding: var(--primary-p, 0.7rem 1rem);
+}

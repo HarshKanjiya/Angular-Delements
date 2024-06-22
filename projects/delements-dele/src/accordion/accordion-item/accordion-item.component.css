@@ -1,0 +1,3 @@
+.accordion-item {
+    border-bottom: 1px solid var(--primary-b-color, #232323);
+}

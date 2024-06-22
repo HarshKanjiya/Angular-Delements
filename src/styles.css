@@ -1,1 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+* {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #232323;
+    --primary-text-color: white;
+    --primary-b-color: #232323;
+    --primary-bg-color: #070707;
+    --primary-p: 0.7rem 1rem;
+    --primary-b-r: 8px;
+}
+
+.dididiv {
+    padding: 1rem 1.7rem;
+}
+
+
+
+.custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    justify-content: center;
+    border: 2px dashed #343434;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: #121212;
+}
+
+.custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #121212;
+}
+
+.custum-file-upload .icon svg {
+    height: 80px;
+    fill: rgba(75, 85, 99, 1);
+    background: #121212;
+}
+
+.custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custum-file-upload .text span {
+    font-weight: 400;
+    background: #121212;
+}
+
+.custum-file-upload input {
+    display: none;
+}
+
+body {
+    transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1) 0s, border-radius 0s;
+}
+
+.zoom-out {
+    transform-origin: center top;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: scale(0.9819444444444444) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0);
+}
