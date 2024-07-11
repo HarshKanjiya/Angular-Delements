@@ -56,4 +56,5 @@ export class AppComponent {
   getdata() {
     console.log('pageob :>> ', this.pageObject);
   }
+
 }
